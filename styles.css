@@ -54,11 +54,21 @@ a:hover {
 }
 
 footer {
-  font-family: "nata-sans", sans-serif;
+  font-family: "nata sans", sans-serif;
   background-color: rgb(115, 186, 115, 0.5);
   color: rgb(8, 43, 8);
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+}
+
+h3 {
+  padding-left: 10px;
+}
+
+h4 {
+  padding-right: 10px;
 }
 
 #home {
@@ -104,4 +114,57 @@ footer {
   height: 50vh;
   width: auto;
   border: 10px solid rgb(21, 94, 63);
+}
+
+.about-text {
+  font-family: "nata sans", sans-serif;
+  font-weight: bold;
+}
+
+#digipets-section {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: rgb(21, 94, 63);
+}
+
+#digipets {
+  /* padding-top: 20px;
+  padding-bottom: 30px; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#digipets-title {
+  font-family: "bungee", sans-serif;
+  font-size: 5vh;
+  color: rgb(235, 121, 45);
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+
+.pet {
+  position: relative;
+}
+
+.digimg {
+  width: auto;
+  height: 40vh;
+  display: block;
+  border-radius: 10px;
+  border: 10px solid rgb(235, 121, 45);
+}
+
+.digimg:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(252, 169, 4, 0.8), 0 0 35px rgba(198, 124, 20, 0.6);
+}
+
+.names {
+  font-family: "bungee", sans-serif;
+  color: rgb(235, 121, 45);
+  text-shadow: 10px 0px 10px rgb(58, 29, 12);
+  position: absolute;
+  bottom: 8px;
+  padding-left: 20px;
 }
