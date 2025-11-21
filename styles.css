@@ -3,3 +3,69 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+header {
+  font-family: "bungee", sans-serif;
+  background-color: rgb(115, 186, 115, 0.5);
+  color: rgb(8, 43, 8);
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  /* max-height: 10%; */
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav {
+  font-size: 2vh;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(8, 43, 8);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(24, 108, 24);
+}
+
+footer {
+  font-family: "nata-sans", sans-serif;
+}
+
+#Home {
+  background-image: url("https://64.media.tumblr.com/6b9040d2353a06211f4ab647872569fb/8c932cb66fd8c5a1-c1/s540x810/6cdc6e2ec577206862484fb1ddb31d460ab0a72d.pnj");
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-msg {
+  position: absolute;
+  background-color: rgb(115, 186, 115, 0.5);
+  width: 40%;
+  height: fit-content;
+  font: 5vh "bungee", sans-serif;
+  color: rgb(8, 43, 8);
+  text-align: center;
+  border-radius: 20px;
+  text-shadow: 2px 2px 4px rgb(69, 222, 95);
+}
+
+.welcome-msg:hover {
+  box-shadow: 0 5px 10px 0 rgba(69, 222, 95, 0.8),
+    0 8px 25px 0 rgba(69, 222, 95, 0.6);
+}
