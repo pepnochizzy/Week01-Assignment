@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   font-family: "bungee", sans-serif;
   background-color: rgb(115, 186, 115, 0.5);
