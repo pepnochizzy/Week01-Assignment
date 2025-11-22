@@ -25,6 +25,11 @@ header {
   padding: 20px;
 }
 
+body {
+  background-image: url("https://64.media.tumblr.com/6b9040d2353a06211f4ab647872569fb/8c932cb66fd8c5a1-c1/s540x810/6cdc6e2ec577206862484fb1ddb31d460ab0a72d.pnj");
+  background-attachment: fixed;
+}
+
 #logo {
   text-decoration: none;
 }
@@ -72,7 +77,7 @@ h4 {
 }
 
 #home {
-  background-image: url("https://64.media.tumblr.com/6b9040d2353a06211f4ab647872569fb/8c932cb66fd8c5a1-c1/s540x810/6cdc6e2ec577206862484fb1ddb31d460ab0a72d.pnj");
+  /* background-image: url("https://64.media.tumblr.com/6b9040d2353a06211f4ab647872569fb/8c932cb66fd8c5a1-c1/s540x810/6cdc6e2ec577206862484fb1ddb31d460ab0a72d.pnj"); */
   height: 100vh;
   width: 100vw;
   position: relative;
@@ -97,39 +102,75 @@ h4 {
 }
 
 .welcome-msg:hover {
-  /* box-shadow: 0 5px 10px 0 rgba(69, 222, 95, 0.8),
-    0 8px 25px 0 rgba(69, 222, 95, 0.6); */
+  box-shadow: 0 5px 10px 0 rgba(69, 222, 95, 0.8),
+    0 8px 25px 0 rgba(69, 222, 95, 0.6);
   box-shadow: 0 5px 10px 0 rgba(244, 118, 14, 0.8),
     0 8px 25px 0 rgba(198, 124, 20, 0.6);
   text-shadow: 4px 4px 6px rgba(244, 162, 46, 0.6);
 }
 
 #about {
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
   background-color: rgb(21, 94, 63);
+  justify-self: center;
+  position: relative;
 }
 
 #about-img {
   height: 50vh;
   width: auto;
-  border: 10px solid rgb(21, 94, 63);
+  /* border: 10px solid rgb(21, 94, 63); */
+  padding-left: 25px;
+  padding-top: 20px;
+}
+
+#about-img-two {
+  height: 50vh;
+  width: auto;
+  justify-self: flex-end;
+  align-self: flex-end;
+  padding-right: 25px;
+}
+
+#about-intro {
+  position: absolute;
+  padding-top: 6vh;
+  padding-left: 10vw;
+}
+
+#about-intro::first-letter {
+  font-size: 8vh;
+  color: rgb(235, 121, 45);
+}
+
+.about-img-text {
+  position: relative;
+  display: flex;
 }
 
 .about-text {
   font-family: "nata sans", sans-serif;
-  font-weight: bold;
+  font-weight: 900;
+  font-size: 5vh;
+}
+
+span {
+  font-family: "bungee";
+  color: rgb(235, 121, 45);
 }
 
 #digipets-section {
+  width: 90vw;
   padding-top: 20px;
   padding-bottom: 30px;
   background-color: rgb(21, 94, 63);
+  justify-self: center;
 }
 
 #digipets {
-  /* padding-top: 20px;
-  padding-bottom: 30px; */
+  padding-top: 20px;
+  padding-bottom: 30px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
