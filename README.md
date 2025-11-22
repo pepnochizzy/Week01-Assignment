@@ -37,6 +37,7 @@ What went really well and what could have gone better?
 
 - I have used a font awesome icon for a shopping basket, I have seen on their website that by default these are ignored by screen readers. As I understand it, best practice would be to also have text- in this case "basket". However, I do not want this to be visible on my page, I just want it available for screenreaders so that they know where to press. I have seen aria-hidden but I think that does the opposite. I have used alt for now but I think that this is mainly for images. Is there an easy way to do this/correct ettiquete?
 - Is there a way to blur image edges? I wanted to blur the edge of #about-img (rat), I took a look at this https://stackoverflow.com/questions/24709915/blur-the-edges-of-an-image-or-background-image-with-css but sadly was unable to replicate this result within my own code (I did have a div for the image when trying but still, no dice).
+- in my about section, I really struggled to try and remove the large gap whilst also maintaining the rough layout. I know this is because of the absolute elements and large margins, but I found without that I couldn't quite get the look I wanted. Any tips would be greatly appreciated.
 
 ## Additional comments for reflection
 

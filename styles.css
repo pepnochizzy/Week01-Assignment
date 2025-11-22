@@ -23,6 +23,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   padding: 20px;
+  z-index: 5;
 }
 
 body {
@@ -111,48 +112,76 @@ h4 {
 
 #about {
   width: 90vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgb(21, 94, 63);
   justify-self: center;
+  display: flex;
   position: relative;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#about-img {
+#about-img-left {
   height: 50vh;
   width: auto;
+  padding-top: 2vh;
+  padding-left: 1vw;
+  align-self: flex-start;
   /* border: 10px solid rgb(21, 94, 63); */
-  padding-left: 25px;
-  padding-top: 20px;
+  /* padding-left: 25px;
+  padding-top: 20px; */
 }
 
-#about-img-two {
-  height: 50vh;
-  width: auto;
-  justify-self: flex-end;
-  align-self: flex-end;
-  padding-right: 25px;
+#about-img-right {
+  height: auto;
+  width: 20vw;
+  position: relative;
+  right: 8vw;
+  z-index: 1;
+  bottom: 10vh;
+  /* justify-self: flex-end;
+  align-self: flex-end; */
+  /* padding-right: 25px; */
 }
 
-#about-intro {
+#overlap-rat {
   position: absolute;
-  padding-top: 6vh;
-  padding-left: 10vw;
+  /* padding-top: 6vh;
+  padding-left: 10vw; */
+  left: -4vw;
+  top: -20vh;
 }
 
-#about-intro::first-letter {
+#overlap-rat::first-letter {
   font-size: 8vh;
   color: rgb(235, 121, 45);
 }
 
-.about-img-text {
+#overlap-snail {
+  position: absolute;
+  width: 110%;
+  top: 8vh;
+  text-align: center;
+  z-index: 2;
+}
+
+#non-overlap {
   position: relative;
-  display: flex;
+  margin-top: 40vh;
+  width: 85vw;
+  align-self: center;
+  text-overflow: wrap;
+  /* right: 10vh; */
 }
 
 .about-text {
   font-family: "nata sans", sans-serif;
   font-weight: 900;
   font-size: 5vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 60vw;
 }
 
 span {
@@ -166,6 +195,7 @@ span {
   padding-bottom: 30px;
   background-color: rgb(21, 94, 63);
   justify-self: center;
+  height: fit-content;
 }
 
 #digipets {
@@ -174,6 +204,7 @@ span {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 #digipets-title {
